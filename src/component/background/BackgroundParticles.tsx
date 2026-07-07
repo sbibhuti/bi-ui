@@ -15,7 +15,7 @@ interface Particle {
     drift: number;
 }
 
-export default memo(function BackgroundParticles() {
+export const BackgroundParticles = memo(function BackgroundParticles() {
     const particles = useMemo<Particle[]>(() => {
         return Array.from({ length: PARTICLES.count }, (_, id) => ({
             id,
@@ -36,11 +36,11 @@ export default memo(function BackgroundParticles() {
     }, []);
 
     return (
-        <div className="absolute inset-0 z-20 overflow-hidden pointer-events-none">
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
             {particles.map((particle) => (
                 <motion.div
                     key={particle.id}
-                    className="absolute rounded-full bg-on-background/90"
+                    className="absolute rounded-full bg-on-bi-background/90"
                     style={{
                         width: particle.size,
                         height: particle.size,
@@ -48,8 +48,8 @@ export default memo(function BackgroundParticles() {
                         top: particle.y,
                         opacity: particle.opacity,
                         boxShadow: `
-                            0 0 8px rgb(from var(--color-on-background) r g b / 45%),
-                            0 0 16px rgb(from var(--color-background) r g b / 35%)
+                            0 0 8px rgb(from var(--color-on-bi-background) r g b / 45%),
+                            0 0 16px rgb(from var(--color-bi-background) r g b / 35%)
                         `,
                     }}
                     animate={{

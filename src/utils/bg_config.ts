@@ -33,38 +33,38 @@ export const LAYERS: Record<Layer, LayerConfig> = {
  */
 export const CARD_COLORS: CardColor[] = [
   {
-    text: "text-on-surface",
-    border: "border-surface",
+    text: "text-on-bi-surface",
+    border: "border-bi-surface",
     glow: "rgba(34,211,238,.45)",
-    bg: "bg-surface-container",
+    bg: "bg-bi-surface-container",
   },
 
   {
-    text: "text-on-primary",
-    border: "border-primary",
+    text: "text-on-bi-primary",
+    border: "border-bi-primary",
     glow: "rgba(59,130,246,.45)",
-    bg: "bg-primary-container",
+    bg: "bg-bi-primary-container",
   },
 
   {
-    text: "text-on-secondary",
-    border: "border-secondary",
+    text: "text-on-bi-secondary",
+    border: "border-bi-secondary",
     glow: "rgba(139,92,246,.45)",
-    bg: "bg-secondary-container",
+    bg: "bg-bi-secondary-container",
   },
 
   {
-    text: "text-on-accent",
-    border: "border-accent",
+    text: "text-on-bi-accent",
+    border: "border-bi-accent",
     glow: "rgba(236,72,153,.45)",
-    bg: "bg-accent-container",
+    bg: "bg-bi-accent-container",
   },
 
   {
-    text: "text-on-tertiary",
-    border: "border-tertiary",
+    text: "text-on-bi-tertiary",
+    border: "border-bi-tertiary",
     glow: "rgba(245,158,11,.45)",
-    bg: "bg-tertiary-container",
+    bg: "bg-bi-tertiary-container",
   },
 ];
 

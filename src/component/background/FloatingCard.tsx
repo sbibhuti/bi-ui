@@ -81,6 +81,4 @@ function FloatingCardComponent({
     );
 }
 
-const FloatingCard = memo(FloatingCardComponent);
-
-export default FloatingCard;
+export const FloatingCard = memo(FloatingCardComponent);

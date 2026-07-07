@@ -1,7 +1,7 @@
 import { useGeneratedCards } from '../../hooks/useGeneratedCards';
-import FloatingCard from './FloatingCard';
+import { FloatingCard } from './FloatingCard';
 
-const BackFloatingCard = () => {
+export const BackFloatingCard = () => {
     const cards = useGeneratedCards();
 
     const backCards = cards.filter(
@@ -9,7 +9,7 @@ const BackFloatingCard = () => {
     );
 
     return (
-        <div className="absolute inset-0 pointer-events-none z-30">
+        <div className="absolute inset-0 pointer-events-none">
             {backCards.map((card) => (
                 <FloatingCard
                     key={card.id}
@@ -18,6 +18,4 @@ const BackFloatingCard = () => {
             ))}
         </div>
     )
-}
-
-export default BackFloatingCard;
+};

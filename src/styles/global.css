@@ -2,83 +2,83 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 :root {
-  --background: #e8e8e8;
-  --on-background: #181919;
+  --bi-background: #e8e8e8;
+  --on-bi-background: #181919;
 
-  --primary: #2563eb;
-  --on-primary: #1e3a8a;
-  --primary-container: #dbeafe;
+  --bi-primary: #2563eb;
+  --on-bi-primary: #1e3a8a;
+  --bi-primary-container: #dbeafe;
 
-  --secondary: #7c3aed;
-  --on-secondary: #4c1d95;
-  --secondary-container: #ede9fe;
+  --bi-secondary: #7c3aed;
+  --on-bi-secondary: #4c1d95;
+  --bi-secondary-container: #ede9fe;
 
-  --tertiary: #d97706;
-  --on-tertiary: #92400e;
-  --tertiary-container: #fef3c7;
+  --bi-tertiary: #d97706;
+  --on-bi-tertiary: #92400e;
+  --bi-tertiary-container: #fef3c7;
 
-  --surface: #0891b2;
-  --on-surface: #164e63;
-  --surface-container: #cffafe;
+  --bi-surface: #0891b2;
+  --on-bi-surface: #164e63;
+  --bi-surface-container: #cffafe;
 
-  --accent: #db2777;
-  --on-accent: #831843;
-  --accent-container: #fce7f3;
+  --bi-accent: #db2777;
+  --on-bi-accent: #831843;
+  --bi-accent-container: #fce7f3;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0c0c0c;
-    --on-background: #f2f2f2;
+    --bi-background: #0c0c0c;
+    --on-bi-background: #f2f2f2;
 
-    --primary: #3b82f6;
-    --on-primary: #93c5fd;
-    --primary-container: #3b83f637;
+    --bi-primary: #3b82f6;
+    --on-bi-primary: #93c5fd;
+    --bi-primary-container: #3b83f637;
 
-    --secondary: #8b5cf6;
-    --on-secondary: #c4b5fd;
-    --secondary-container: #8a5cf644;
+    --bi-secondary: #8b5cf6;
+    --on-bi-secondary: #c4b5fd;
+    --bi-secondary-container: #8a5cf644;
 
-    --tertiary: #f59e0b;
-    --on-tertiary: #fde68a;
-    --tertiary-container: #f59e0b37;
+    --bi-tertiary: #f59e0b;
+    --on-bi-tertiary: #fde68a;
+    --bi-tertiary-container: #f59e0b37;
 
-    --surface: #22d3ee;
-    --on-surface: #67e8f9;
-    --surface-container: #22d3ee23;
+    --bi-surface: #22d3ee;
+    --on-bi-surface: #67e8f9;
+    --bi-surface-container: #22d3ee23;
 
-    --accent: #ec4899;
-    --on-accent: #f9a8d4;
-    --accent-container: #ec489937;
+    --bi-accent: #ec4899;
+    --on-bi-accent: #f9a8d4;
+    --bi-accent-container: #ec489937;
   }
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-on-background: var(--on-background);
+  --color-bi-background: var(--bi-background);
+  --color-on-bi-background: var(--on-bi-background);
 
-  --color-primary: var(--primary);
-  --color-on-primary: var(--on-primary);
-  --color-primary-container: var(--primary-container);
+  --color-bi-primary: var(--bi-primary);
+  --color-on-bi-primary: var(--on-bi-primary);
+  --color-bi-primary-container: var(--bi-primary-container);
 
-  --color-secondary: var(--secondary);
-  --color-on-secondary: var(--on-secondary);
-  --color-secondary-container: var(--secondary-container);
+  --color-bi-secondary: var(--bi-secondary);
+  --color-on-bi-secondary: var(--on-bi-secondary);
+  --color-bi-secondary-container: var(--bi-secondary-container);
 
-  --color-tertiary: var(--tertiary);
-  --color-on-tertiary: var(--on-tertiary);
-  --color-tertiary-container: var(--tertiary-container);
+  --color-bi-tertiary: var(--bi-tertiary);
+  --color-on-bi-tertiary: var(--on-bi-tertiary);
+  --color-bi-tertiary-container: var(--bi-tertiary-container);
 
-  --color-surface: var(--surface);
-  --color-on-surface: var(--on-surface);
-  --color-surface-container: var(--surface-container);
+  --color-bi-surface: var(--bi-surface);
+  --color-on-bi-surface: var(--on-bi-surface);
+  --color-bi-surface-container: var(--bi-surface-container);
 
-  --color-accent: var(--accent);
-  --color-on-accent: var(--on-accent);
-  --color-accent-container: var(--accent-container);
+  --color-bi-accent: var(--bi-accent);
+  --color-on-bi-accent: var(--on-bi-accent);
+  --color-bi-accent-container: var(--bi-accent-container);
 }
 
 body {
-  background: var(--color-background);
-  color: var(--color-on-background);
+  background: var(--color-bi-background);
+  color: var(--color-on-bi-background);
 }

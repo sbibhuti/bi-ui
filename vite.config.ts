@@ -5,6 +5,13 @@ import dts from "vite-plugin-dts";
 import { libInjectCss } from "vite-plugin-lib-inject-css";
 import path from "path";
 
+const externalDeps = [
+  "react",
+  "react-dom",
+  "react/jsx-runtime",
+  "react/jsx-dev-runtime",
+];
+
 export default defineConfig(({ command }) => {
   if (command === "serve") {
     return {
@@ -20,6 +27,7 @@ export default defineConfig(({ command }) => {
       dts({
         insertTypesEntry: true,
         exclude: ["src/App.tsx", "src/main.tsx"],
+        tsconfigPath: "./tsconfig.app.json",
       }),
     ],
 
@@ -33,12 +41,13 @@ export default defineConfig(({ command }) => {
       lib: {
         entry: path.resolve(__dirname, "src/index.ts"),
         name: "BibhuUI",
-        formats: ["es", "cjs"],
+        formats: ["es"],
         fileName: (format) => `index.${format}.js`,
       },
 
       rollupOptions: {
-        external: ["react", "react-dom"],
+        external: (id) =>
+          externalDeps.some((dep) => id === dep || id.startsWith(`${dep}/`)),
       },
 
       sourcemap: true,
