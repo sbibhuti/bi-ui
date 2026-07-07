@@ -1,0 +1,84 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --background: #e8e8e8;
+  --on-background: #181919;
+
+  --primary: #2563eb;
+  --on-primary: #1e3a8a;
+  --primary-container: #dbeafe;
+
+  --secondary: #7c3aed;
+  --on-secondary: #4c1d95;
+  --secondary-container: #ede9fe;
+
+  --tertiary: #d97706;
+  --on-tertiary: #92400e;
+  --tertiary-container: #fef3c7;
+
+  --surface: #0891b2;
+  --on-surface: #164e63;
+  --surface-container: #cffafe;
+
+  --accent: #db2777;
+  --on-accent: #831843;
+  --accent-container: #fce7f3;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0c0c0c;
+    --on-background: #f2f2f2;
+
+    --primary: #3b82f6;
+    --on-primary: #93c5fd;
+    --primary-container: #3b83f637;
+
+    --secondary: #8b5cf6;
+    --on-secondary: #c4b5fd;
+    --secondary-container: #8a5cf644;
+
+    --tertiary: #f59e0b;
+    --on-tertiary: #fde68a;
+    --tertiary-container: #f59e0b37;
+
+    --surface: #22d3ee;
+    --on-surface: #67e8f9;
+    --surface-container: #22d3ee23;
+
+    --accent: #ec4899;
+    --on-accent: #f9a8d4;
+    --accent-container: #ec489937;
+  }
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-on-background: var(--on-background);
+
+  --color-primary: var(--primary);
+  --color-on-primary: var(--on-primary);
+  --color-primary-container: var(--primary-container);
+
+  --color-secondary: var(--secondary);
+  --color-on-secondary: var(--on-secondary);
+  --color-secondary-container: var(--secondary-container);
+
+  --color-tertiary: var(--tertiary);
+  --color-on-tertiary: var(--on-tertiary);
+  --color-tertiary-container: var(--tertiary-container);
+
+  --color-surface: var(--surface);
+  --color-on-surface: var(--on-surface);
+  --color-surface-container: var(--surface-container);
+
+  --color-accent: var(--accent);
+  --color-on-accent: var(--on-accent);
+  --color-accent-container: var(--accent-container);
+}
+
+body {
+  background: var(--color-background);
+  color: var(--color-on-background);
+}
